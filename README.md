@@ -1,4 +1,6 @@
-# The database contains 3 SQL tables: 
+# General Introduction: 
+This project aims to analyze different performance metrics of a financial institution. The project's database is a sample SQL Server database.
+## The database contains 3 SQL tables: 
 - CREDITS: Contains information on each credit. This includes:
             - CreditID: ID of the credit
             - CreditAmount: Amount of the credit in USD
@@ -23,9 +25,9 @@
             - InstallmentDate: installment's due date
             - PaymentDate: Actual payment date of the installment amount
 
-# Semantic Relationships: 
+## Semantic Relationships: 
 - CLIENTS 1 x * CREDITS: column CLIENTID
 - CREDIT 1 x 1 CREDITSCHEDULE: column CREDITID
   
-The 3 tables are manipulated using SQL queries (in the Dataset Generation.ipynb file) to generate the 3 excel files (Clients.xlsx, Credits.xlsx, Credit Schedule.xlsx).
-The Excel files are then imported in the Exploratory Data Analysis.ipynb file for further analysis
+The 3 tables are manipulated using SQL queries (in the Dataset Generation.ipynb file) to generate the 3 Excel files (Clients.xlsx, Credits.xlsx, Credit Schedule.xlsx).
+The Excel files are then imported into the Exploratory Data Analysis.ipynb file for further analysis
